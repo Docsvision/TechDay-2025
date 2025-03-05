@@ -1,6 +1,7 @@
 ﻿import * as WhooshHandlers from "./Whoosh/WhooshParametrizedHandler";
 import * as WhooshAutoSubscribe from "./Whoosh/WhooshAutoSubscribe";
 import * as WhooshTypedLayout from "./Whoosh/WhooshTypedLayout";
+import * as LogOnServer from "./Whoosh/LogOnServer";
 import { extensionManager } from "@docsvision/webclient/System/ExtensionManager";
 import { Service } from "@docsvision/web/core/services";
 import { $RequestManager } from "@docsvision/webclient/System/$RequestManager";
@@ -16,7 +17,7 @@ import { WhooshControl } from "./Whoosh/WhooshControl";
 extensionManager.registerExtension({
     name: "Whoosh web extension",
     version: "1.0",
-    globalEventHandlers: [ WhooshHandlers, WhooshAutoSubscribe, WhooshTypedLayout ],
+    globalEventHandlers: [ WhooshHandlers, WhooshAutoSubscribe, WhooshTypedLayout, LogOnServer ],
     layoutServices: [
     ],
     controls: [
