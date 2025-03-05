@@ -1,0 +1,10 @@
+﻿WhooshDesignerExtension/.vs
+WhooshDesignerExtension/obj
+WhooshDesignerExtension/bin
+WhooshWebExtension/Dist
+WhooshWebExtension/node_modules
+whoosh-scripts/WhooshDesignerExtension/.vs
+obj
+bin
+whoosh-scripts/WhooshWebExtension/Dist
+node_modules

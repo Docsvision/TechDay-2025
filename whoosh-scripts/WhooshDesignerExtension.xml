@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Controls>
+    <Control Name="WhooshControl" DisplayName="Whoosh">
+        <Properties>
+            <!-- Имя элемента управления в разметке -->
+            <Property Type="Name" />
+            <!-- Свойство для произвольной информации, используемой скриптами -->
+            <Property Type="Tag"/>
+            <!-- Подсказка -->
+            <Property Type="Tip" />
+            
+            <!-- CSS-классы -->
+            <Property Type="StandardCssClass" DefaultValue="control-1" />
+            <Property Type="CustomCssClasses" />
+            
+            <!-- Привязка к данным карточки -->
+            <Property Type="ExtendedDataSource" />
+            <Property Type="DataSource" />
+            <Property Type="DataField" />
+            <Property Type="Binding" BindingConverter="" BindingResolver="" />
+            
+            <!-- Доступность по ролевой модели -->
+            <Property Type="EditOperation" />
+            <Property Type="IsInheritedEditOperation" />
+            <Property Type="Disabled" />
+
+			<Property Name="ButtonName" DisplayName="Button name"
+				Category="BehaviorCategory" DataType="System.String" DefaultValue="" />
+			<Property Name="CopyFrom" DisplayName="Copy from control"
+				Category="BehaviorCategory" DataType="System.String" DefaultValue="" />
+			<Property Name="CopyTo" DisplayName="Copy to control"
+				Category="BehaviorCategory" DataType="System.String" DefaultValue="" />
+
+                
+        </Properties>
+        <Events>
+            <!-- События -->
+            <Event Name="Click" DisplayName="При щелчке" />
+            <Event Name="MouseOver" DisplayName="При наведении курсора" />
+            <Event Name="MouseOut" DisplayName="При отведении курсора" />
+        </Events>
+    </Control>
+</Controls>
