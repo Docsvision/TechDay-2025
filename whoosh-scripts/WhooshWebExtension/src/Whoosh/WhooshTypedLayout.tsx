@@ -11,5 +11,5 @@ export class DocumentLayout extends LayoutControlsAccessor {
 
 export function whoosh_typedHandler(sender: LayoutControl) {
     const layout = new DocumentLayout(sender.layout);
-     layout.approvers.value = layout.signers.value;
+    layout.signers.value = layout.approvers.value;
 }
