@@ -1,0 +1,25 @@
+{
+  "$schema": "file://109PC0051.digdes.com/Schemas/managementConsoleLayoutSchema.json",
+  "elements": [
+    {
+      "label": "Основная конфигурация котов",
+      "editorType": "Group",
+      "elements": [
+        {
+          "label": "Количество котов",
+          "description": "Укажите количество котов, которое должно быть показано",
+          "editorType": "Number",
+          "required": true,
+          "path": "Count"
+        },
+        {
+          "label": "Цветовая гамма котов",
+          "description": "Укажите цветовую гамму количество котов",
+          "editorType": "ColorPicker",
+          "required": true,
+          "path": "Color"
+        }
+      ]
+    }
+  ]
+}

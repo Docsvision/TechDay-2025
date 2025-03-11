@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cats Info</title>
+</head>
+<body>
+    <h2>Cats Information</h2>
+    <p>Count: <span id="count">Loading...</span></p>
+    <p>Color: <span id="color">Loading...</span></p>
+
+    <script>
+        async function loadData() {
+            try {
+                const countResponse = await fetch('/count');
+                const count = await countResponse.json();
+                document.getElementById('count').textContent = count;
+
+                const colorResponse = await fetch('/color');
+                const color = await colorResponse.text();
+                document.getElementById('color').textContent = color;
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        loadData();
+    </script>
+</body>
+</html>

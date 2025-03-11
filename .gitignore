@@ -9,3 +9,4 @@ bin
 whoosh-scripts/WhooshWebExtension/Dist
 node_modules
 whoosh-scripts/WhooshServerExtension/.vs
+CatsService/TDService/.vs

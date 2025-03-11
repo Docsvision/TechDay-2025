@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 100px;
+  height: calc(100% - 120px);
+}
+
+.cat {
+  width: 200px;
+  height: 200px;
+}
+
+.cats__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  position: relative;
+}
+
+.cats__scroll-container {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+}
